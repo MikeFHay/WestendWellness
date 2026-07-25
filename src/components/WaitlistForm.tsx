@@ -33,9 +33,14 @@ export const WaitlistForm = () => {
 
   if (status === "success") {
     return (
-      <p className="text-lg max-w-md mx-auto text-white">
-        Thanks for signing up! We'll be in touch with early bird offers soon.
-      </p>
+      <div className="text-lg max-w-md mx-auto text-white">
+        <p>
+          Thanks for signing up, we'll be in touch soon!
+        </p>
+        <p>
+          In the meantime, follow us on Instagram!
+        </p>
+      </div>
     );
   }
 
