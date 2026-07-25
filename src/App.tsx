@@ -31,9 +31,9 @@ export default function WestEndWellness() {
       </section>
 
       {/* About Section */}
-      <section className="bg-[#f8f7f3] text-gray-900 py-8 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
-        Follow us on Instagram
-        <a href="https://www.instagram.com/westendwellnessdundee" target="_blank" rel="noopener noreferrer" className="text-[#D4AF37] font-semibold hover:underline" >
+      <section className="bg-[#f8f7f3] text-gray-900 py-6 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
+        Click below to follow us on Instagram
+        <a href="https://www.instagram.com/westendwellnessdundee" target="_blank" rel="noopener noreferrer" className="text-[#D4AF37] font-semibold hover:underline text-lg" >
         @westendwellnessdundee
           <img src="/wew_insta_qr.png" alt="West End Wellness Instagram QR Code" className="m-2" />
         </a>
