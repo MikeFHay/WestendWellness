@@ -1,12 +1,10 @@
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "./components/ui/card"
-import { Button } from "./components/ui/button";
 import { Calendar, MapPin, Users } from "lucide-react";
 import logo from "./assets/logo.jpg";
+import { WaitlistForm } from "./components/WaitlistForm";
 
 export default function WestEndWellness() {
-  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-[#f8f7f3] text-gray-900">
       {/* Hero Section */}
@@ -28,9 +26,10 @@ export default function WestEndWellness() {
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-white">
           A welcoming Pilates and wellness studio on Perth Road, Dundee. Strengthen your body, improve flexibility, and restore balance in a calm, supportive environment.
         </p>
-        <Button onClick={() => navigate("/booking")} className="rounded-2xl text-base px-6 py-3 shadow-md">
-          Book a Session
-        </Button>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-white font-semibold">
+          Opening soon. Sign up to the mailing list to receive early bird offers.
+        </p>
+        <WaitlistForm />
       </section>
 
       {/* About Section */}

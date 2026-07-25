@@ -11,7 +11,7 @@ export const Button = ({ children, className = "", onClick, ...props }: ButtonPr
   return (
     <button
       onClick={onClick}
-      className={`bg-[#D4AF37] text-[#6B704F] px-4 py-2 rounded-2xl hover:opacity-90 transition ${className}`}
+      className={`bg-[#D4AF37] text-[#2E2A1F] font-semibold px-4 py-2 rounded-2xl transition-colors hover:bg-[#C29E2E] active:bg-[#B08E24] disabled:opacity-60 disabled:cursor-not-allowed ${className}`}
       {...props}
     >
       {children}
