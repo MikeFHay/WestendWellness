@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { Card, CardContent } from "./components/ui/card"
-import { Calendar, MapPin, Users } from "lucide-react";
 import logo from "./assets/logo.jpg";
 import { WaitlistForm } from "./components/WaitlistForm";
 
