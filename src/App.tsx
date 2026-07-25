@@ -26,7 +26,7 @@ export default function WestEndWellness() {
           </div>
         </motion.h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-white">
-          A welcoming Pilates studio on Perth Road, Dundee. Strengthen your body, improve flexibility, and restore balance in a calm, supportive environment.
+          A welcoming Pilates and wellness studio on Perth Road, Dundee. Strengthen your body, improve flexibility, and restore balance in a calm, supportive environment.
         </p>
         <Button onClick={() => navigate("/booking")} className="rounded-2xl text-base px-6 py-3 shadow-md">
           Book a Session
