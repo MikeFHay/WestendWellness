@@ -74,6 +74,7 @@ export const WaitlistForm = () => {
       {status === "error" && (
         <p className="text-sm text-white/90">Something went wrong. Please try again.</p>
       )}
+      <p className='text-sm'>We'll only use your details to tell you when bookings open - full privacy notice <a href="/waitlist_privacy" className="underline">here</a>.</p>
     </form>
   );
 };
