@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import { Button } from "./ui/button";
 
 const BASIN_ENDPOINT = "https://usebasin.com/f/9b383a047618";
@@ -74,7 +75,7 @@ export const WaitlistForm = () => {
       {status === "error" && (
         <p className="text-sm text-white/90">Something went wrong. Please try again.</p>
       )}
-      <p className='text-sm'>We'll only use your details to tell you when bookings open - full privacy notice <a href="/waitlist_privacy" className="underline">here</a>.</p>
+      <p className='text-sm'>We'll only use your details to tell you when bookings open - full privacy notice <Link to="/waitlist_privacy" className="underline">here</Link>.</p>
     </form>
   );
 };

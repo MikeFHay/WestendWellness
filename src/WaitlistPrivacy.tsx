@@ -1,3 +1,6 @@
+export function meta() {
+    return [{ title: "Privacy notice | Westend Wellness" }]
+}
 
 export default function WaitlistPrivacy() {
     return <div className="max-w-3xl mx-auto p-6 text-gray-900 text-center">

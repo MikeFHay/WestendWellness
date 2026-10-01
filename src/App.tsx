@@ -1,18 +1,19 @@
-import { motion } from "framer-motion";
 import logo from "./assets/logo.jpg";
 import { WaitlistForm } from "./components/WaitlistForm";
+
+export function meta() {
+  return [
+    { title: "Westend Wellness" },
+    { name: "description", content: "A welcoming Pilates and wellness studio on Perth Road, Dundee." },
+  ];
+}
 
 export default function WestEndWellness() {
   return (
     <div className="min-h-screen bg-[#f8f7f3] text-gray-900">
       {/* Hero Section */}
       <section className="relative bg-[#5F6446] py-5 px-6 text-center text-white">
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-6xl font-semibold mb-4"
-        >
+        <h1 className="text-4xl md:text-6xl font-semibold mb-4 animate-fade-in-down">
           <div className="flex justify-center items-center">
             <img
               src={logo}
@@ -20,7 +21,7 @@ export default function WestEndWellness() {
               className="w-48 md:w-64 mb-6"
             />
           </div>
-        </motion.h1>
+        </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-white">
           A welcoming Pilates and wellness studio on Perth Road, Dundee. Strengthen your body, improve flexibility, and restore balance in a calm, supportive environment.
         </p>
