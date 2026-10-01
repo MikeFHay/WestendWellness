@@ -1,4 +1,5 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
+import Footer from './components/ui/footer'
 import './index.css'
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -21,5 +22,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function Root() {
-  return <Outlet />
+  return (
+    <>
+      <Outlet />
+      <Footer />
+    </>
+  )
 }
