@@ -13,12 +13,12 @@ export default function WestEndWellness() {
     <div className="min-h-screen bg-[#f8f7f3] text-gray-900">
       {/* Hero Section */}
       <section className="relative bg-[#5F6446] py-5 px-6 text-center text-white">
-        <h1 className="text-4xl md:text-6xl font-semibold mb-4 animate-fade-in-down">
+        <h1 className="text-4xl font-semibold mb-4 animate-fade-in-down justify-center">
           <div className="flex justify-center items-center">
             <img
               src={logo}
-              alt="West End Wellness Logo"
-              className="w-48 md:w-64 mb-6"
+              alt="Westend Wellness"
+              className="w-48 md:w-64 mb-6 aspect-square"
             />
           </div>
         </h1>
