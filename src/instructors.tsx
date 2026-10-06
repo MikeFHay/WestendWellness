@@ -4,6 +4,8 @@ import fran from './assets/instructors/fran.jpg'
 import helena from './assets/instructors/helena.jpg'
 import kirsty from './assets/instructors/kirsty.jpg'
 import sarah from './assets/instructors/sarah.jpg'
+import kama from './assets/instructors/kama.jpg'
+import erine from './assets/instructors/erine.jpg'
 
 export function meta() {
   return [
@@ -32,6 +34,15 @@ const instructors: Instructor[] = [
     ],
   },
   {
+    name: 'Erine',
+    photo: erine,
+    bio: [
+      "Hi, I’m Erine, a Pilates instructor with a background in Nursing. 🤍",
+      "My Pilates journey began with mat Pilates in 2020, and I discovered reformer in 2022. Since then, it’s become something I genuinely love and a way of moving that really resonates with me.",
+      "I love helping people feel stronger, more confident, and more connected to their bodies. My classes are a mix of mindful movement and a good workout, with a focus on meeting you where you are and making you feel supported. 🥰"
+    ],
+  },
+  {
     name: 'Evy',
     photo: evy,
     photoPosition: 'object-[30%_center]',
@@ -45,7 +56,11 @@ const instructors: Instructor[] = [
     name: 'Fran',
     photo: fran,
     photoPosition: 'object-top',
-    bio: ["Fran's Bio is yet to be written!"],
+    bio: [
+      "Hi, I’m Francesca! I’m a Reformer Pilates enthusiast, a veggie food and Border Terrier lover.", 
+      "My passion for Reformer Pilates blossomed while living in Sydney, Australia, where studios were everywhere!  Before moving to Dundee with my Scottish husband Craig, I trained and worked at a boutique studio in London.", 
+      "I’m thrilled to begin my new role at Westend Wellness for many reasons including the state-of-the-art equipment, gorgeous decor and lovely owner Lucy."
+    ],
   },
   {
     name: 'Helena',
@@ -56,6 +71,8 @@ const instructors: Instructor[] = [
   },
   {
     name: 'Kama',
+    photo: kama,
+    photoPosition: 'object-bottom',
     bio: [
       'Heyyy, I’m Kama - I’ve worked within the fitness industry for a few years now, finding the art of Pilates along the way. Over the last year I have been teaching Reformer and Mat Pilates, which is where my heart lies. Teaching has allowed me to move slower and appreciate the now.',
       'I find passion in creating strong classes, with the intention to find both challenge and enjoyment through the experience. I look to create a space that focuses on controlled movement, polished technique and an atmosphere which allows you to feel confident in your body, moving with grace. I like to add my own spin on the classical pilates method, whether that’s through my playlist, the class structure or bringing a more modern energy to Pilates.',
