@@ -1,4 +1,5 @@
 import cat from './assets/instructors/cat.jpg'
+import christine from './assets/instructors/christine.jpg'
 import evy from './assets/instructors/evy.jpg'
 import fran from './assets/instructors/fran.jpg'
 import helena from './assets/instructors/helena.jpg'
@@ -30,6 +31,13 @@ const instructors: Instructor[] = [
       'As a Physiotherapist and APPI Pilates Instructor, I apply my clinical experience and knowledge into every session. My approach combines injury prevention, rehabilitation and long-term strengthening.',
       'My professional and personal experiences have shown me how beneficial pilates can be for both physical and mental wellbeing and this is what makes me so passionate about teaching, and why I love my job. I love nothing more than working with and helping people achieve their goals.',
       'I’m looking forward to being a part of Westend Wellness, joining an amazing team, meeting some lovely new clients and working in the most beautiful venue.',
+    ],
+  },
+  {
+    name: 'Christine',
+    photo: christine,
+    bio: [
+      'I’ve been teaching group exercise since 1998 and qualified as a Pilates instructor in 2000. Movement and fitness have been a huge part of my life, and I’m genuinely passionate about helping people feel stronger, healthier and more confident in themselves, both physically and mentally. I’m a dynamic and enthusiastic teacher who loves connecting with people and seeing them progress. I believe in always growing and developing, which is why I’m currently undertaking fully comprehensive Pilates training at Balans, expanding my knowledge across even more apparatus. For me, teaching is about sharing my experience, inspiring others and helping people feel the very best version of themselves.',
     ],
   },
   {
