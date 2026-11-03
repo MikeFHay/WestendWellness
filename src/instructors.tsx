@@ -4,7 +4,6 @@ import fran from './assets/instructors/fran.jpg'
 import helena from './assets/instructors/helena.jpg'
 import kirsty from './assets/instructors/kirsty.jpg'
 import sarah from './assets/instructors/sarah.jpg'
-import kama from './assets/instructors/kama.jpg'
 import erine from './assets/instructors/erine.jpg'
 
 export function meta() {
@@ -67,17 +66,6 @@ const instructors: Instructor[] = [
     photo: helena,
     bio: [
       'My name is Helena. I teach Reformer, Barre and I am also a Personal Trainer. I love combining Pilates with strength elements to help you feel amazing and strong. I have a passion for movement and hope that you feel that when you come to my class. My playlist is really important to me and I believe the right songs can push you & get you through challenging exercises.',
-    ],
-  },
-  {
-    name: 'Kama',
-    photo: kama,
-    photoPosition: 'object-bottom',
-    bio: [
-      'Heyyy, I’m Kama - I’ve worked within the fitness industry for a few years now, finding the art of Pilates along the way. Over the last year I have been teaching Reformer and Mat Pilates, which is where my heart lies. Teaching has allowed me to move slower and appreciate the now.',
-      'I find passion in creating strong classes, with the intention to find both challenge and enjoyment through the experience. I look to create a space that focuses on controlled movement, polished technique and an atmosphere which allows you to feel confident in your body, moving with grace. I like to add my own spin on the classical pilates method, whether that’s through my playlist, the class structure or bringing a more modern energy to Pilates.',
-      'I don’t believe that Pilates has to feel overly serious or fit into one particular mould - if you work hard and allow yourself to let go for the hour, I can guarantee you’ll leave feeling that little bit lighter🪽',
-      'I’m excited to meet some new faces in the gorgeous Westend Wellness studio, connecting with those who are seeking a fresh take on Pilates🤍',
     ],
   },
   {
