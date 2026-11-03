@@ -56,7 +56,6 @@ export default function WestEndWellness() {
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-white font-semibold">
           Book a class or gym access at <ExternalLink to="https://momence.com/u/westend-wellness-iidzU6" className="underline">Momence</ExternalLink>
         </p>
-        {/* <WaitlistForm /> */}
       </section>
 
       <section className="bg-[#f8f7f3] text-gray-900 py-6 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
