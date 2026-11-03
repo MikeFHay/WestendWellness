@@ -1,6 +1,4 @@
-import { Link } from "react-router";
 import logo from "./assets/logo.jpg";
-import { WaitlistForm } from "./components/WaitlistForm";
 import { ExternalLink } from "./components/ui/external_link";
 
 export function meta() {
