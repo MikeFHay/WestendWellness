@@ -3,6 +3,9 @@ import { ExternalLink } from "./external_link";
 
 const MOMENCE_URL = "https://momence.com/u/westend-wellness-iidzU6";
 
+const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
+  `hover:opacity-80 ${isActive ? "underline underline-offset-4" : ""}`;
+
 export default function Header() {
   return (
     <header className="w-full bg-[#5F6446] text-white">
@@ -12,19 +15,17 @@ export default function Header() {
         </Link>
 
         <nav className="flex items-center gap-4 sm:gap-6 text-sm sm:text-base font-semibold">
-          <NavLink
-            to="/instructors"
-            className={({ isActive }) =>
-              `hover:opacity-80 ${isActive ? "underline underline-offset-4" : ""}`
-            }
-          >
+          <NavLink to="/memberships" className={navLinkClassName}>
+            Memberships
+          </NavLink>
+          <NavLink to="/instructors" className={navLinkClassName}>
             Instructors
           </NavLink>
           <ExternalLink
             to={MOMENCE_URL}
-            className="rounded-full bg-white px-4 py-1.5 text-[#5F6446] transition-colors hover:bg-[#f8f7f3]"
+            className="rounded-full bg-white px-4 py-1.5 text-[#5F6446] text-box-trim supports-text-box:py-[11px] sm:supports-text-box:py-3 transition-colors hover:bg-[#f8f7f3]"
           >
-            Book on Momence
+            Book<span className="hidden sm:inline"> on Momence</span>
           </ExternalLink>
         </nav>
       </div>

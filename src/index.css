@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  /*
+   * Trims the line box to cap height + baseline so text is optically centred
+   * in buttons. Pair with `supports-text-box:py-*` to restore the button height,
+   * since the trimmed line box is shorter. No effect in unsupported browsers.
+   */
+  .text-box-trim {
+    text-box: trim-both cap alphabetic;
+  }
+}

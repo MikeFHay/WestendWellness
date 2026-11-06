@@ -78,7 +78,7 @@ export default function WestEndWellness() {
         </ul>
         <ExternalLink
           to="https://momence.com/u/westend-wellness-iidzU6"
-          className="mt-10 inline-block rounded-full bg-[#5F6446] px-8 py-3 text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#4b4f37]"
+          className="mt-10 inline-block rounded-full bg-[#5F6446] px-8 py-3 text-lg font-semibold text-white shadow-sm text-box-trim supports-text-box:py-5 transition-colors hover:bg-[#4b4f37]"
         >
           Book now
         </ExternalLink>

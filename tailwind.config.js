@@ -5,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {
+      supports: {
+        'text-box': 'text-box: trim-both cap alphabetic',
+      },
       keyframes: {
         'fade-in-down': {
           from: { opacity: '0', transform: 'translateY(-20px)' },
