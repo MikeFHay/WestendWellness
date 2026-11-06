@@ -46,7 +46,7 @@ export default function WestEndWellness() {
             <img
               src={logo}
               alt="Westend Wellness"
-              className="w-48 md:w-64 mb-6 aspect-square"
+              className="w-48 md:w-64 mb-6 aspect-square text-[0]"
             />
           </div>
         </h1>
@@ -59,7 +59,7 @@ export default function WestEndWellness() {
       </section>
 
       <section className="bg-[#f8f7f3] text-gray-900 py-6 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
-        <h2 className="text-3xl font-semibold mb-4 animate-fade-in-down">
+        <h2 className="text-3xl font-semibold mb-4">
           What we offer
         </h2>
         <p className="text-lg max-w-2xl mb-8 text-gray-700">
