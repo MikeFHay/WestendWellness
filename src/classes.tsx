@@ -1,27 +1,59 @@
-import { useEffect } from 'react'
-
 export function meta() {
-  return [{ title: 'Classes | Westend Wellness' }]
+  return [
+    { title: 'Classes | Westend Wellness' },
+    {
+      name: 'description',
+      content: 'Reformer Pilates, mat Pilates, barre and yoga classes at Westend Wellness, Dundee.',
+    },
+  ]
 }
 
+const offerings = [
+  {
+    title: 'Reformer Pilates',
+    description:
+      'Spring-resistance work on the reformer to build core strength, control and posture, with options for beginners through to advanced.',
+  },
+  {
+    title: 'Mat Pilates',
+    description:
+      'Classic floor-based Pilates focused on breath, alignment and deep core strength, using just your own body weight.',
+  },
+  {
+    title: 'Barre',
+    description:
+      'Low-impact, ballet-inspired conditioning that tones and sculpts through small, controlled movements.',
+  },
+  {
+    title: 'Yoga',
+    description:
+      'Mindful movement to improve flexibility, ease tension and leave you feeling calm and balanced.',
+  },
+]
+
 export default function Classes() {
-  useEffect(() => {
-    const script = document.createElement('script')
-    script.async = true
-    script.type = 'module'
-    script.src = 'https://momence.com/plugin/host-schedule/host-schedule.js'
-    script.setAttribute('host_id', '310814')
-    script.setAttribute('teacher_ids', '[]')
-    script.setAttribute('location_ids', '[]')
-    script.setAttribute('tag_ids', '[]')
-    script.setAttribute('default_filter', 'show-all')
-    script.setAttribute('locale', 'en')
-    document.body.appendChild(script)
+  return (
+    <div className="min-h-screen bg-[#f8f7f3] text-gray-900">
+      <section className="bg-[#5F6446] py-10 px-6 text-center text-white">
+        <h1 className="text-4xl font-semibold">Classes</h1>
+      </section>
 
-    return () => {
-      script.remove()
-    }
-  }, [])
-
-  return <div id="ribbon-schedule"></div>
+      <section className="max-w-6xl mx-auto py-10 px-6 flex flex-col items-center text-center">
+        <p className="text-lg max-w-2xl mb-8 text-gray-700">
+          Something for every body and every level, from your first class to your hundredth.
+        </p>
+        <ul className="grid gap-6 w-full sm:grid-cols-2 text-left">
+          {offerings.map(({ title, description }) => (
+            <li
+              key={title}
+              className="bg-white rounded-2xl border border-[#5F6446]/20 shadow-sm p-6 transition-shadow hover:shadow-md"
+            >
+              <h3 className="text-xl font-semibold text-[#5F6446] mb-2">{title}</h3>
+              <p className="text-gray-700 leading-relaxed">{description}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  )
 }
