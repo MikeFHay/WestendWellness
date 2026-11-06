@@ -24,10 +24,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function Root() {
   return (
-    <>
+    <div className="flex min-h-dvh flex-col">
       <Header />
-      <Outlet />
+      <main className="flex-1 bg-[#f8f7f3] text-gray-900">
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
   )
 }

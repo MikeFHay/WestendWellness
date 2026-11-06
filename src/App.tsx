@@ -11,7 +11,7 @@ export function meta() {
 
 export default function WestEndWellness() {
   return (
-    <div className="min-h-screen bg-[#f8f7f3] text-gray-900">
+    <div className="bg-[#f8f7f3] text-gray-900">
       {/* Hero Section */}
       <section className="relative bg-[#5F6446] py-5 px-6 text-center text-white">
         <h1 className="text-4xl font-semibold mb-4 animate-fade-in-down justify-center">
