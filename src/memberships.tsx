@@ -75,6 +75,20 @@ const sections: MembershipSection[] = [
         memberships: [
           {
             tag: 'Non-reformer',
+            name: '5 classes per month',
+            price: 44,
+            usualPrice: 55,
+            path: 'Early-Bird-5-classes-per-month-(excludes-Reformer-classes-%26-gym)-Membership/978442',
+          },
+          {
+            tag: 'Non-reformer',
+            name: '10 classes per month',
+            price: 84,
+            usualPrice: 105,
+            path: 'Early-Bird-10-classes-per-month-(excludes-Reformer-classes-%26-gym)-Membership/978438',
+          },
+          {
+            tag: 'Non-reformer',
             name: '15 classes per month',
             price: 95,
             usualPrice: 120,
@@ -126,6 +140,16 @@ const sections: MembershipSection[] = [
         title: 'Non-reformer',
         description: 'A cheaper option that excludes reformer classes.',
         memberships: [
+          {
+            name: '5 classes per month',
+            price: 55,
+            path: '5-classes-per-month-(excludes-Reformer-classes-%26-gym)-Membership/978444',
+          },
+          {
+            name: '10 classes per month',
+            price: 105,
+            path: '10-classes-per-month-(excludes-Reformer-classes-%26-gym)-Membership/978443',
+          },
           {
             name: '15 classes per month',
             price: 120,
