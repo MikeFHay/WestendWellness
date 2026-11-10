@@ -264,7 +264,7 @@ export default function Memberships() {
         {sections.map(({ id, title, description, priceSuffix, groups }) => (
           <section key={id} id={id} className="scroll-mt-6">
             <h2 className="text-3xl font-semibold text-[#5F6446]">{title}</h2>
-            <p className="mt-2 max-w-3xl text-lg text-gray-700 leading-relaxed">{description}</p>
+            <p className="mt-2 max-w-4xl text-lg text-gray-700 leading-relaxed">{description}</p>
 
             <div className="mt-8 flex flex-col gap-5">
               {groups.map((group) => (

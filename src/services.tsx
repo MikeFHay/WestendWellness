@@ -25,7 +25,7 @@ export default function Services() {
         <h1 className="text-4xl font-semibold">Services</h1>
       </section>
 
-      <div className="max-w-3xl mx-auto py-10 px-6 flex flex-col gap-6">
+      <div className="max-w-4xl mx-auto py-10 px-6 flex flex-col gap-6">
         <section
           id="gym"
           className="scroll-mt-6 bg-white rounded-2xl border border-[#5F6446]/20 shadow-sm overflow-hidden flex flex-col sm:flex-row-reverse"
