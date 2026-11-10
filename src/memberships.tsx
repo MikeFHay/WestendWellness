@@ -69,6 +69,10 @@ const sections: MembershipSection[] = [
             usualPrice: 195,
             path: 'Early-Bird-Membership-15-classes-including-Reformer-(excluding-gym)-per-month/927205',
           },
+        ],
+      },
+      {
+        memberships: [
           {
             tag: 'Non-reformer',
             name: '15 classes per month',
@@ -76,6 +80,10 @@ const sections: MembershipSection[] = [
             usualPrice: 120,
             path: 'Early-Bird-Membership-15-Classes-per-month-(excluding-Reformer-and-gym)/940477',
           },
+        ]
+      },
+      {
+        memberships: [
           {
             tag: 'Gym access',
             name: 'Unlimited gym access',
@@ -83,8 +91,8 @@ const sections: MembershipSection[] = [
             usualPrice: 40,
             path: 'Early-Bird-Gym-Only-Membership/940479',
           }
-        ],
-      },
+        ]
+      }
     ],
   },
   {
@@ -234,7 +242,7 @@ export default function Memberships() {
             <h2 className="text-3xl font-semibold text-[#5F6446]">{title}</h2>
             <p className="mt-2 max-w-3xl text-lg text-gray-700 leading-relaxed">{description}</p>
 
-            <div className="mt-8 flex flex-col gap-10">
+            <div className="mt-8 flex flex-col gap-5">
               {groups.map((group) => (
                 <div key={group.title ?? id}>
                   {group.title && (
