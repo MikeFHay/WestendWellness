@@ -76,6 +76,13 @@ const sections: MembershipSection[] = [
             usualPrice: 120,
             path: 'Early-Bird-Membership-15-Classes-per-month-(excluding-Reformer-and-gym)/940477',
           },
+          {
+            tag: 'Gym access',
+            name: 'Unlimited gym access',
+            price: 32,
+            usualPrice: 40,
+            path: 'Early-Bird-Gym-Only-Membership/940479',
+          }
         ],
       },
     ],
