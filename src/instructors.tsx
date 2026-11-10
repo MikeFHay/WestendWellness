@@ -1,6 +1,7 @@
 import cat from './assets/instructors/cat.jpg'
 import christine from './assets/instructors/christine.jpg'
 import evy from './assets/instructors/evy.jpg'
+import fede from './assets/instructors/fede.jpg'
 import fran from './assets/instructors/fran.jpg'
 import helena from './assets/instructors/helena.jpg'
 import kirsty from './assets/instructors/kirsty.jpg'
@@ -57,6 +58,16 @@ const instructors: Instructor[] = [
       'Originally from Chicago, Evy is a yoga teacher and mobility coach currently based in Dundee, Scotland. In 2012, she completed her 200-hour teacher training in Power Vinyasa. Over the years, she has pursued certification in Restorative and Yin practices, with additional qualification as a Mobility Specialist. Currently, she is enrolled in a 300-hour teacher training, and believes deeply in the importance of ongoing study.',
       'As a teacher, she strives to provide an inclusive and supportive environment- a place for people to gather, move, breathe, expand, and explore together. Classes will stretch the mind and soften tension, while building strength and mobility in a considered manner. Evy guides practice with a heartfelt invitation for students to meet themselves and each other with curiosity and compassion.',
       'I feel delighted to join the team at Westend Wellness! The considered offerings of pilates, yoga, a weight room, and sports massage are amazing, and I look forward to the community that will grow in this gorgeous space!',
+    ],
+  },
+  {
+    name: 'Fede',
+    photo: fede,
+    bio: [
+      'I\'m Fede, a personal trainer at Westend Wellness. I have a background in science and university teaching, alongside a lifelong passion for training, fitness and strength.',
+      'I believe good training should be individualised, purposeful and enjoyable. Whether you\'re new to the gym, returning after a break or looking to take your training further, my aim is to help you build strength, confidence and make meaningful progress.',
+      'I work with real people leading real lives, so training needs to fit around your goals, abilities and everyday commitments. My sessions are structured and supportive, helping you understand what you\'re doing, why you\'re doing it and how you\'re progressing.',
+      'Ultimately, it\'s about building strength and healthy habits in a way that\'s realistic, sustainable and rewarding.',
     ],
   },
   {
