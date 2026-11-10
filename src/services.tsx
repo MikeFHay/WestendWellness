@@ -59,16 +59,27 @@ export default function Services() {
         >
           <h2 className="text-3xl font-semibold text-[#5F6446]">Personal training</h2>
           <p className="mt-3 text-lg text-gray-700 leading-relaxed">
-            Get 1:1 or group coaching with our personal trainer Fede.
+            Get 1:1 or group coaching with our personal trainers on your schedule.
+            Prices range from £30 per session for group coaching to £60 for 1:1 training.
+            Enquire at <a href="mailto:lucy@westendwellness.com" className="text-[#5F6446] underline">lucy@westendwellness.com</a> or
           </p>
+          <div className="mt-6">
+            <ExternalLink to="https://momence.com/appointments/appointment-reservation/310814?boardId=259625&serviceId=399216" className={buttonClassName}>
+              Book a consultation
+            </ExternalLink>
+          </div>
         </section>
 
         <section
           id="massage"
           className="scroll-mt-6 bg-white rounded-2xl border border-[#5F6446]/20 shadow-sm p-6"
         >
-          <h2 className="text-3xl font-semibold text-[#5F6446]">Massage</h2>
-          <p className="mt-3 text-lg text-gray-700 leading-relaxed">Coming soon!</p>
+          <h2 className="text-3xl font-semibold text-[#5F6446]">Sports Therapy</h2>
+          <p className="mt-3 text-lg text-gray-700 leading-relaxed">Endurance Sports Therapy offers services from our massage room. Contact them via{' '}
+            <ExternalLink to="https://www.instagram.com/endurance.sports.therapy" className="text-[#5F6446] underline">
+              Instagram
+            </ExternalLink>
+          </p>
         </section>
       </div>
     </div>
