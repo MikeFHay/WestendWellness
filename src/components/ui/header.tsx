@@ -36,7 +36,7 @@ export default function Header() {
           </nav>
           <ExternalLink
             to={MOMENCE_URL}
-            className="rounded-full bg-white px-4 py-1.5 text-[#5F6446] text-box-trim supports-text-box:py-[11px] sm:supports-text-box:py-3 transition-colors hover:bg-[#f8f7f3]"
+            className="rounded-full bg-white px-4 py-1.5 ml-1 text-[#5F6446] text-box-trim supports-text-box:py-[11px] sm:supports-text-box:py-3 transition-colors hover:bg-[#f8f7f3]"
           >
             Book<span className="hidden sm:inline"> on Momence</span>
           </ExternalLink>
