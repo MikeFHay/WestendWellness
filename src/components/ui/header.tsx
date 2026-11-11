@@ -10,6 +10,7 @@ const pages = [
   { to: "/services", label: "Services" },
   { to: "/memberships", label: "Memberships" },
   { to: "/instructors", label: "Instructors" },
+  { to: "/faq", label: "FAQ" },
 ];
 
 const navLinkClassName = ({ isActive }: { isActive: boolean }) =>

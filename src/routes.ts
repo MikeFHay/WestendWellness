@@ -7,4 +7,5 @@ export default [
   route('instructors', './instructors.tsx'),
   route('memberships', './memberships.tsx'),
   route('services', './services.tsx'),
+  route('faq', './faq.tsx'),
 ] satisfies RouteConfig
