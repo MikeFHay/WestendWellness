@@ -1,6 +1,11 @@
 import { Link } from "react-router";
 import logo from "./assets/logo.jpg";
 import { ExternalLink } from "./components/ui/external_link";
+import barreClass from "./assets/gallery/2.jpeg";
+import reformerClass from "./assets/gallery/12.jpeg";
+import reformerStudio from "./assets/gallery/reformers.webp";
+import matStudio from "./assets/gallery/studio.webp";
+import street from "./assets/gallery/street.webp";
 
 export function meta() {
   return [
@@ -8,6 +13,35 @@ export function meta() {
     { name: "description", content: "A welcoming Pilates and wellness studio on Perth Road, Dundee." },
   ];
 }
+
+// Portrait photos fill one column and two rows; the rest fill a two-by-two block.
+const photos = [
+  {
+    src: street,
+    alt: "The red sandstone Westend Wellness building, with a view down the lane to the River Tay",
+    className: "col-span-2 row-span-2 object-[center_60%]",
+  },
+  {
+    src: reformerStudio,
+    alt: "The reformer studio, with rows of reformers beneath tall windows",
+    className: "col-span-2 row-span-2",
+  },
+  {
+    src: barreClass,
+    alt: "A row of clients holding the barre during a Barre class",
+    className: "row-span-2",
+  },
+  {
+    src: matStudio,
+    alt: "The mat and barre studio, with a mirrored wall and wooden floor",
+    className: "col-span-2 row-span-2",
+  },
+  {
+    src: reformerClass,
+    alt: "Clients lunging on reformers with their arms raised overhead",
+    className: "row-span-2",
+  },
+];
 
 export default function WestEndWellness() {
   return (
@@ -35,6 +69,18 @@ export default function WestEndWellness() {
           <ExternalLink to="https://momence.com/u/westend-wellness-iidzU6" className="underline">Momence</ExternalLink>
         </p>
       </section>
+      <ul className="max-w-6xl mx-auto pb-6 px-6 grid grid-cols-2 md:grid-cols-4 auto-rows-[10rem] md:auto-rows-[15rem] gap-3 md:gap-4">
+        {photos.map(({ src, alt, className }) => (
+          <li key={src} className="contents">
+            <img
+              src={src}
+              alt={alt}
+              loading="lazy"
+              className={`w-full h-full object-cover rounded-2xl bg-[#5F6446]/10 ${className}`}
+            />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
