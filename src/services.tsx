@@ -72,7 +72,7 @@ export default function Services() {
           <p className="mt-3 text-lg text-gray-700 leading-relaxed">
             Get 1:1 or group coaching with our personal trainers on your schedule.
             Prices range from £30 per session for group coaching to £60 for 1:1 training.
-            Enquire at <a href="mailto:lucy@westendwellness.uk" className="text-[#5F6446] underline">lucy@westendwellness.uk</a> or
+            Enquire at <a href="mailto:info@westendwellness.uk" className="text-[#5F6446] underline">info@westendwellness.uk</a> or
           </p>
           <div className="mt-6">
             <ExternalLink to="https://momence.com/appointments/appointment-reservation/310814?boardId=259625&serviceId=399216" className={buttonClassName}>

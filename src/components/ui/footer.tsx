@@ -14,7 +14,7 @@ export default function Footer() {
             className="w-6 h-6"
           />
         </ExternalLink>
-        <a href="mailto:lucy@westendwellness.uk">
+        <a href="mailto:info@westendwellness.uk">
           <img
             src="/email.svg"
             alt="Email"
