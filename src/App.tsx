@@ -34,7 +34,7 @@ const photos = [
   {
     src: matStudio,
     alt: "The mat and barre studio, with a mirrored wall and wooden floor",
-    className: "col-span-2 row-span-2",
+    className: "col-span-2 row-span-2 hidden md:block",
   },
   {
     src: reformerClass,
