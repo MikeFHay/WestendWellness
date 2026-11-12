@@ -24,7 +24,7 @@ export default function Header() {
     <header className="w-full bg-[#5F6446] text-white">
       <div className="mx-auto flex items-center justify-between px-4 sm:px-6 py-3 border-white border-b">
         <Link to="/" aria-label="Westend Wellness home" className="shrink-0 pr-4" onClick={closeMenu}>
-          <img src="/wew_icon.svg" alt="Westend Wellness" className="h-10 w-10" />
+          <img src="/wew_icon.svg" alt="Home" className="h-10 w-10 text-xs" />
         </Link>
 
         <div className="flex items-center gap-2 md:gap-4 text-sm sm:text-base font-semibold">

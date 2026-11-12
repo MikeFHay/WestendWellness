@@ -11,14 +11,14 @@ export default function Footer() {
           <img
             src="/Instagram_Glyph_White.svg"
             alt="Instagram"
-            className="w-6 h-6"
+            className="w-6 h-6 text-[0]"
           />
         </ExternalLink>
         <a href="mailto:info@westendwellness.uk">
           <img
             src="/email.svg"
             alt="Email"
-            className="w-6 h-6"
+            className="w-6 h-6 text-[0]"
           />
         </a>
       </div>
