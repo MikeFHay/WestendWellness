@@ -77,8 +77,7 @@ export default function Classes() {
               <img
                 src={photo}
                 alt={alt}
-                loading="lazy"
-                className={`w-2/5 sm:w-48 shrink-0 self-start aspect-[3/4] object-cover bg-[#5F6446]/10 ${photoPosition}`}
+                className={`w-2/5 sm:w-48 shrink-0 aspect-[3/4] object-cover bg-[#5F6446]/10 ${photoPosition}`}
               />
               <div className="p-4 sm:p-6 self-center">
                 <h3 className="text-xl font-semibold text-[#5F6446] mb-2">{title}</h3>
