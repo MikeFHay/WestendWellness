@@ -70,12 +70,13 @@ export default function WestEndWellness() {
         </p>
       </section>
       <ul className="max-w-6xl mx-auto pb-6 px-6 grid grid-cols-2 md:grid-cols-4 auto-rows-[10rem] md:auto-rows-[15rem] gap-3 md:gap-4">
-        {photos.map(({ src, alt, className }) => (
+        {photos.map(({ src, alt, className }, i) => (
           <li key={src} className="contents">
             <img
               src={src}
               alt={alt}
-              loading="lazy"
+              // The first row is visible on load, so only defer the photos below it
+              loading={i < 2 ? "eager" : "lazy"}
               className={`w-full h-full object-cover rounded-2xl bg-[#5F6446]/10 ${className}`}
             />
           </li>
