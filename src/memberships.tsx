@@ -111,8 +111,8 @@ const sections: MembershipSection[] = [
   },
   {
     id: 'monthly',
-    title: 'Monthly class pass',
-    description: 'A set number of classes every month.',
+    title: 'Monthly membership',
+    description: 'A set number of classes every month. These are the undiscounted prices, see the Early Bird deals above!',
     priceSuffix: '/month',
     groups: [
       {
@@ -163,7 +163,7 @@ const sections: MembershipSection[] = [
     id: 'drop-in',
     title: 'Drop-in & class packs',
     description:
-      'A more flexible option for one-off classes. All class passes are valid for 3 months from purchase.',
+      'A more flexible option for one-off classes.',
     groups: [
       {
         title: 'Including reformer',
