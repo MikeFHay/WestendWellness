@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigation } from "react-router";
 import { Menu, X } from "lucide-react";
 import { ExternalLink } from "./external_link";
 
@@ -19,10 +19,11 @@ const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
+  const isNavigating = useNavigation().state !== "idle";
 
   return (
     <header className="w-full bg-[#5F6446] text-white">
-      <div className="mx-auto flex items-center justify-between px-4 sm:px-6 py-3 border-white border-b">
+      <div className="relative mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
         <Link to="/" aria-label="Westend Wellness home" className="shrink-0 pr-4" onClick={closeMenu}>
           <img src="/wew_icon.svg" alt="Home" className="h-10 w-10 text-xs" />
         </Link>
@@ -51,6 +52,16 @@ export default function Header() {
           >
             {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
+        </div>
+
+        {/* Bottom border, which doubles as a progress indicator while navigating */}
+        <div
+          aria-hidden="true"
+          className={`absolute inset-x-0 bottom-0 h-px overflow-hidden transition-colors ${
+            isNavigating ? "bg-white/10 delay-150" : "bg-white"
+          }`}
+        >
+          {isNavigating && <div className="h-full w-1/3 animate-nav-progress bg-white" />}
         </div>
       </div>
 
