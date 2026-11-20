@@ -13,10 +13,10 @@
   }
 }
 
-/* Page transitions (see `viewTransition` on links and the fade-out in root.tsx) */
+/* Page transitions (see `viewTransition` on links) */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: 200ms;
+  animation-duration: 400ms;
   animation-timing-function: ease-out;
 }
 

@@ -54,21 +54,15 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Bottom border, which dims while navigating */}
+        {/* Bottom border, which doubles as a progress indicator while navigating */}
         <div
           aria-hidden="true"
-          className={`absolute inset-x-0 bottom-0 h-px transition-colors ${
+          className={`absolute inset-x-0 bottom-0 h-px overflow-hidden transition-colors ${
             isNavigating ? "bg-white/10 delay-150" : "bg-white"
           }`}
-        />
-
-        {/* Progress indicator, drawn just below the header. The page content fades out
-            while navigating (see root.tsx), so it sits on the cream background. */}
-        {isNavigating && (
-          <div aria-hidden="true" className="absolute inset-x-0 top-full z-10 h-0.5 overflow-hidden">
-            <div className="h-full w-1/3 animate-nav-progress bg-[#5F6446]" />
-          </div>
-        )}
+        >
+          {isNavigating && <div className="h-full w-1/3 animate-nav-progress bg-white" />}
+        </div>
       </div>
 
       <nav
