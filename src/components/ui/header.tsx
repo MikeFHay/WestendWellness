@@ -24,14 +24,14 @@ export default function Header() {
   return (
     <header className="w-full bg-[#5F6446] text-white">
       <div className="relative mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
-        <Link to="/" aria-label="Westend Wellness home" className="shrink-0 pr-4" onClick={closeMenu}>
+        <Link viewTransition to="/" aria-label="Westend Wellness home" className="shrink-0 pr-4" onClick={closeMenu}>
           <img src="/wew_icon.svg" alt="Home" className="h-10 w-10 text-xs" />
         </Link>
 
         <div className="flex items-center gap-2 md:gap-4 text-sm sm:text-base font-semibold">
           <nav aria-label="Main" className="hidden md:flex items-center gap-4">
             {pages.map(({ to, label }) => (
-              <NavLink key={to} to={to} className={navLinkClassName}>
+              <NavLink viewTransition key={to} to={to} className={navLinkClassName}>
                 {label}
               </NavLink>
             ))}
@@ -54,15 +54,21 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Bottom border, which doubles as a progress indicator while navigating */}
+        {/* Bottom border, which dims while navigating */}
         <div
           aria-hidden="true"
-          className={`absolute inset-x-0 bottom-0 h-px overflow-hidden transition-colors ${
+          className={`absolute inset-x-0 bottom-0 h-px transition-colors ${
             isNavigating ? "bg-white/10 delay-150" : "bg-white"
           }`}
-        >
-          {isNavigating && <div className="h-full w-1/3 animate-nav-progress bg-white" />}
-        </div>
+        />
+
+        {/* Progress indicator, drawn just below the header. The page content fades out
+            while navigating (see root.tsx), so it sits on the cream background. */}
+        {isNavigating && (
+          <div aria-hidden="true" className="absolute inset-x-0 top-full z-10 h-0.5 overflow-hidden">
+            <div className="h-full w-1/3 animate-nav-progress bg-[#5F6446]" />
+          </div>
+        )}
       </div>
 
       <nav
@@ -72,6 +78,7 @@ export default function Header() {
       >
         {pages.map(({ to, label }) => (
           <NavLink
+            viewTransition
             key={to}
             to={to}
             onClick={closeMenu}

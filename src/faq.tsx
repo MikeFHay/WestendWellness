@@ -121,7 +121,7 @@ const sections: FaqSection[] = [
           <p>
             We offer monthly memberships plus class packs of 5, 10 or 15 classes, as well as single
             drop-in classes. See{' '}
-            <Link to="/memberships" className={linkClassName}>
+            <Link viewTransition to="/memberships" className={linkClassName}>
               memberships
             </Link>{' '}
             for details.
@@ -133,7 +133,7 @@ const sections: FaqSection[] = [
         answer: (
           <p>
             Yes – our{' '}
-            <Link to="/memberships#early-bird" className={linkClassName}>
+            <Link viewTransition to="/memberships#early-bird" className={linkClassName}>
               early bird members
             </Link>{' '}
             get 20% off their membership for their first 12 months. Please note this offer ends on
@@ -253,7 +253,7 @@ const sections: FaqSection[] = [
           <p>
             Yes – personal training is available to gym members, charged on top of your membership.
             See{' '}
-            <Link to="/services#personal-training" className={linkClassName}>
+            <Link viewTransition to="/services#personal-training" className={linkClassName}>
               personal training
             </Link>{' '}
             for details.

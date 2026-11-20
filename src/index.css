@@ -12,3 +12,18 @@
     text-box: trim-both cap alphabetic;
   }
 }
+
+/* Page transitions (see `viewTransition` on links and the fade-out in root.tsx) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 200ms;
+  animation-timing-function: ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

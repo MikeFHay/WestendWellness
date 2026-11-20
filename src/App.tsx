@@ -63,9 +63,9 @@ export default function WestEndWellness() {
       </section>
       <section className="py-10 px-6 flex flex-col items-center text-center">
         <p className="text-lg md:text-xl max-w-2xl mx-auto text-[#5F6446] font-semibold">
-          Browse our <Link to="/classes" className="underline">classes</Link>,{" "}
-          <Link to="/services" className="underline">services</Link>, and{" "}
-          <Link to="/memberships" className="underline">memberships</Link>, or book on{" "}
+          Browse our <Link viewTransition to="/classes" className="underline">classes</Link>,{" "}
+          <Link viewTransition to="/services" className="underline">services</Link>, and{" "}
+          <Link viewTransition to="/memberships" className="underline">memberships</Link>, or book on{" "}
           <ExternalLink to="https://momence.com/u/westend-wellness-iidzU6" className="underline">Momence</ExternalLink>
         </p>
       </section>
