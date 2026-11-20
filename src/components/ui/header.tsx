@@ -22,7 +22,7 @@ export default function Header() {
   const isNavigating = useNavigation().state !== "idle";
 
   return (
-    <header className="w-full bg-[#5F6446] text-white">
+    <header className="relative z-20 w-full bg-[#5F6446] text-white">
       <div className="relative mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
         <Link viewTransition to="/" aria-label="Westend Wellness home" className="shrink-0 pr-4" onClick={closeMenu}>
           <img src="/wew_icon.svg" alt="Home" className="h-10 w-10 text-xs" />
@@ -74,7 +74,7 @@ export default function Header() {
       <nav
         id="mobile-menu"
         aria-label="Main"
-        className={`${menuOpen ? "flex" : "hidden"} md:hidden flex-col px-4 sm:px-6 py-2 border-white border-b text-lg font-semibold`}
+        className={`${menuOpen ? "flex" : "hidden"} md:hidden absolute inset-x-0 top-full flex-col bg-[#5F6446] px-4 sm:px-6 py-2 border-white border-b text-lg font-semibold shadow-lg`}
       >
         {pages.map(({ to, label }) => (
           <NavLink
