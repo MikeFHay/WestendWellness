@@ -26,7 +26,9 @@ export default function Root() {
   const navigation = useNavigation()
   const location = useLocation()
   // Fade the current page out as soon as a navigation to another page starts, to mask
-  // loading time. The view transition then cross-fades from here to the new page.
+  // loading time. When the new page renders, the same transition reverses, fading it in
+  // from wherever the fade-out had reached, so there's never a jump (even in browsers
+  // without view transitions). For fast loads, the view transition adds a cross-fade.
   const isLeaving =
     navigation.state === 'loading' && navigation.location.pathname !== location.pathname
 
@@ -34,7 +36,7 @@ export default function Root() {
     <div className="flex min-h-dvh flex-col">
       <Header />
       <main className="flex-1 bg-[#f8f7f3] text-gray-900">
-        <div className={isLeaving ? 'opacity-0 transition-opacity duration-200 ease-out' : undefined}>
+        <div className={`transition-opacity duration-200 ease-out ${isLeaving ? 'opacity-0' : ''}`}>
           <Outlet />
         </div>
       </main>
